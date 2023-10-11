@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ta te ti Jacascript</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="dist/output.css" rel="stylesheet">
+	<script src="script/tateti.js" defer></script>
+</head>
+
+<body class="m-0 p-0 flex items-center justify-center font-sans min-h-screen">
+	<main class="flex flex-col items-center justify-center">
+		<h1 class="text-center text-5xl">TaTeTi</h1>
+		<br>
+		<h2 class="text-center text-4xl" id="jugador-turno"></h2>
+		<br>
+		<div class="w-fit items-center justify-items-center justify-center grid grid-cols-3" id="wrapper-tateti">
+
+			<!-- Primera Fila	 -->
+			<div class="w-24 h-24 border-black border-solid border-b-2 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+			<div class="w-24 h-24 border-black border-solid border-2 border-t-0 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+			<div class="w-24 h-24 border-black border-solid border-b-2 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+
+			<!-- Segunda F24a  -->
+			<div class="w-24 h-24 flex justify-center items-center relative cursor-pointer" data-item>
+			</div>
+			<div class="w-24 h-24 border-black border-solid border-x-2 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+			<div class="w-24 h-24 flex justify-center items-center relative cursor-pointer" data-item>
+			</div>
+
+			<!-- Tercera F24a  -->
+			<div class="w-24 h-24 border-black border-solid border-t-2 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+			<div class="w-24 h-24 border-black border-solid border-2 border-b-0 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+			<div class="w-24 h-24 border-black border-solid border-t-2 flex justify-center items-center relative cursor-pointer"
+				data-item>
+			</div>
+		</div>
+		<br>
+		<h2 class="text-center text-4xl" id="mensaje-ganador"></h2>
+		<br>
+
+		<button
+			class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-center text-4xl"
+			id="boton-reiniciar" type="submit">Reiniciar Partida</button>
+	</main>
+
+	<audio id="sonido-click" preload="auto">
+		<source src="./sonidos/sonidoClickCelda.wav" type="audio/wav">
+	</audio>
+	<audio id="sonido-hover" preload="auto">
+		<source src="./sonidos/sonidoHoverMouse.ogg" type="audio/ogg">
+	</audio>
+	<audio id="sonido-click-boton" preload="auto">
+		<source src="./sonidos/sonidoClickBoton.ogg" type="audio/ogg">
+	</audio>
+	<audio id="sonido-victoria" preload="auto">
+		<source src="./sonidos/victoria.mp3" type="audio/mp3">
+	</audio>
+</body>
+
+</html>
